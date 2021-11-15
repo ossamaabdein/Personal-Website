@@ -1,0 +1,25 @@
+.footer {
+    background-color: #171717;
+    color: #fff;
+}
+
+.contactsList {
+    list-style: none;
+    li {
+        margin-right: 8px;
+    }
+    i {
+        font-size: 23px;
+        color: #eaeaea;
+        transition: all 0.2s ease-in-out;
+    }
+
+    i:hover {
+        color: #a14857;
+    }
+}
+.credits {
+    font-size: 15px;
+    color: #bbbbbb;
+    padding-bottom: 5px;
+}

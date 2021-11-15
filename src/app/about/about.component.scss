@@ -1,0 +1,74 @@
+.about {
+    min-height: 85vh;
+    font-family: 'Mada', sans-serif;
+    .quote {
+        width: 75%;
+        text-align: center;
+        h2 {
+            .easier {
+                color: rgb(1, 1, 138);
+            }
+        }
+    }
+    ul {
+        list-style: none;
+    }
+
+.contacts {
+    padding-left: 50px;
+}
+
+    .contactsList {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+
+        li {
+            font-size: 25px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            a {
+                display: flex;
+                color: #444343;
+                text-decoration: none;
+                span {
+                    font-size: 16px;
+                }
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+.cv {
+    width: fit-content;
+    .btn {
+        background-color: #3182CE;
+        color: #fff !important;
+        &:hover {
+            background-color: #2C5282;
+        }
+    }
+}
+
+.ref {
+    color: rgb(94, 93, 93);
+    font-size: 14px;
+    font-style: italic
+}
+
+@media screen and (max-width: 765px) {
+    .about {
+        .quote {
+            width: 98%;
+            padding-top: 5px !important;
+        }
+    }
+
+    .contacts {
+        padding-left: 12px !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

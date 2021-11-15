@@ -1,0 +1,114 @@
+
+
+.intro {
+    font-family: 'Mada', sans-serif;
+    text-align: center;
+    h2 {
+        font-weight: bold;
+
+    }
+    .intro-info {
+        width: 60%;
+        margin: auto;
+        p {
+            font-size: 16px;            
+        }
+    }
+    .wavingHand {
+        width: 40px;
+    }
+
+    img {
+        width: 250px;
+        margin: auto;
+        // border-radius: 50% !important;
+    }
+}
+
+.portfolio {
+    h2 {
+        font-family: 'Mada', sans-serif;
+        font-size: 36px;
+    }
+}
+
+
+.contactsList {
+    list-style: none;
+    li {
+        margin: 4px;
+    }
+    i {
+        font-size: 25px;
+        color: rgba($color: #111111, $alpha: 0.8);
+        transition: all 0.2s ease-in-out;
+    }
+
+    i:hover {
+        color: #111111;
+    }
+}
+
+
+.cardContainer {
+    padding:10px;
+}
+
+.card {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    height: 255px;
+    color: #000;
+    text-decoration: none;
+    .card-img-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 15px 0;
+        img {
+            width: 80px;
+            height: 80px;
+            transition: all 0.25s ease-in-out;
+        }
+    }
+    &:hover {
+        transform: scale(1.01);
+    }
+    &:hover::after {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba($color: #9386b3fd, $alpha: 0.2);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-title {
+    font-weight: 700;
+    
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Mada', sans-serif;
+}
+
+@media screen and (max-width: 765px) {
+    .intro {
+    .intro-info {
+        width: 95%;
+        // text-align: justify;
+    }
+}
+}
