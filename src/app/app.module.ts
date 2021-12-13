@@ -9,7 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { BlogComponent } from './blog/blog.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutComponent } from './about/about.component';
-
+import { NgxSpinnerModule } from 'ngx-spinner';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -24,6 +25,8 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxSpinnerModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
